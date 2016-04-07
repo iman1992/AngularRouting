@@ -1,0 +1,22 @@
+<div class="col-md-6">
+<table class="table">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Name</td>
+                    <td>Details</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users">
+                    <td><img src="{{user.picture.thumbnail}}"></td>
+                    <td>{{user.first}} {{user.last}}</td>
+                    <td>
+                        <a href="#viewSpec/{{user.first}}/{{user.last}}">
+                            <input type="submit" value="View">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

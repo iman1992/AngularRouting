@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-6">
+        <p class="text-danger"><font size="6">Details for {{ specUser.first}} {{specUser.last}}</font></p>
+        <p><strong class="text-info">Name:</strong> {{ specUser.first}} {{specUser.last}}</p>
+        <p><strong class="text-info">Gender:</strong> {{ specUser.gender }}</p>
+        <br>
+        <p><strong class="text-info">Street:</strong> {{ specUser.street }}</p>
+        <p><strong class="text-info">City:</strong> {{ specUser.city }}</p>
+        <p><strong class="text-info">Zip:</strong> {{ specUser.zip }}</p>
+        <br>
+        <p><strong class="text-info">Phone:</strong> {{ specUser.phone }}</p>
+        <p><strong class="text-info">Cell:</strong> {{ specUser.cell }}</p>
+        <p><strong class="text-info">Email:</strong> {{ specUser.email }}</p>
+        <a href="#viewAll"><input type="submit" value="Back"></a>
+    </div>
+    <div class="col-md-6">
+        <img class="img-responsive" src="{{specUser.picture.large}}">
+    </div>
+</div>
